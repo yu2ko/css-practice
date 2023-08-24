@@ -1,5 +1,5 @@
 /* ==========================================
-selectors1
+selector1
 ========================================== */
 
 /* :root {
@@ -125,10 +125,10 @@ h2 ~ * > p {
 } */
 
 /* =====================================================
-selectors2
+selector2
 ===================================================== */
 
-/* .card-dark {
+.card-dark {
   background: #dadad3;
 }
 
@@ -214,86 +214,5 @@ p:not(.item) {
 
 p:empty {
   height: 10px;
-  background: red;
-} */
-
-/* =====================================================
-selectors2
-===================================================== */
-
-.card-dark {
-  background: rgb(247, 244, 244);
-}
-
-.input-dark {
-  background: rgb(197, 192, 192);
-}
-
-.input-dark[required] {
-  background: rgb(227, 25, 25);
-}
-
-.input-dark-required {
-  background: rgb(227, 25, 25);
-}
-
-.input-dark[type='number'] {
-  background: #19e337;
-}
-
-.small-img[alt~='small'] {
-  height: 500px;
-  width: 600px;
-}
-
-.card[alt~='small'] {
-  height: 500px;
-}
-
-.card[class~='img'] {
-  height: 500px;
-}
-
-.card.img {
-  height: 500px;
-}
-
-.small-img[alt~='small'] {
-  height: 500px;
-}
-
-a[rel~='external'] {
-  color: green;
-}
-
-button[class|='btn'] {
-  background: red;
-}
-
-button[class*='btn'] {
-  background: #8000ff;
-}
-
-button[class$='btn'] {
-  background: #00ff44;
-}
-
-.btn::first-letter {
-  color: #6600ff;
-}
-
-.big-text::first-line {
-  color: rgb(255, 0, 111);
-}
-
-.input-dark::placeholder {
-  color: green;
-  background: blue;
-}
-
-.before-after::before,
-.before-after::after {
-  content: '$$$';
-  color: #00ff44;
   background: red;
 }

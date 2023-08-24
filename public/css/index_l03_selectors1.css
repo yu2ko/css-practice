@@ -1,0 +1,121 @@
+:root {
+  background: purple;
+}
+
+html {
+  max-width: 720px;
+  background: blue;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+
+.box {
+  background: hwb(132 9% 17%);
+}
+
+#user,
+.user {
+  color: blueviolet;
+}
+
+h3,
+h2#user,
+button {
+  color: green;
+}
+
+.button {
+  background: red;
+  color: black;
+}
+
+h1.button {
+  background: red;
+  color: black;
+}
+
+h3,
+h2#user,
+button.button {
+  color: green;
+}
+
+h3,
+h2#user,
+button.button#button {
+  color: green;
+}
+
+div > p {
+  color: paleturquoise;
+}
+
+.box > p {
+  color: paleturquoise;
+}
+
+#box > p {
+  color: paleturquoise;
+}
+
+footer > .user {
+  color: black;
+}
+
+footer > h1 {
+  color: rgb(101, 32, 211);
+}
+
+footer em {
+  color: rgb(101, 32, 211);
+}
+/* не працює з приттером
+footer_ >>_ em {
+  color: rgb(101, 32, 211);
+} */
+
+footer .child {
+  color: #fdfd00;
+}
+
+footer em.child {
+  color: #fdfd00;
+}
+
+footer em.child,
+footer div.child,
+footer .child {
+  color: #fdfd00;
+}
+
+h3 + p {
+  background: black;
+}
+
+h2 + .test {
+  background: black;
+}
+
+h2 ~ p {
+  background: black;
+}
+
+h2 ~ p,
+h2 ~ div > p {
+  background: black;
+}
+
+h2 ~ p,
+h2 ~ * > p {
+  background: black;
+}
