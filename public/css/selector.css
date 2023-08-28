@@ -1,0 +1,411 @@
+/* ==========================================
+selectors1
+========================================== */
+
+/* :root {
+  background: purple;
+}
+
+html {
+  max-width: 720px;
+  background: blue;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+
+.box {
+  background: hwb(132 9% 17%);
+}
+
+#user,
+.user {
+  color: blueviolet;
+}
+
+h3,
+h2#user,
+button {
+  color: green;
+}
+
+.button {
+  background: red;
+  color: black;
+}
+
+h1.button {
+  background: red;
+  color: black;
+}
+
+h3,
+h2#user,
+button.button {
+  color: green;
+}
+
+h3,
+h2#user,
+button.button#button {
+  color: green;
+}
+
+div > p {
+  color: paleturquoise;
+}
+
+.box > p {
+  color: paleturquoise;
+}
+
+#box > p {
+  color: paleturquoise;
+}
+
+footer > .user {
+  color: black;
+}
+
+footer > h1 {
+  color: rgb(101, 32, 211);
+}
+
+footer em {
+  color: rgb(101, 32, 211);
+}
+не працює з приттером
+footer_ >>_ em {
+  color: rgb(101, 32, 211);
+}
+
+footer .child {
+  color: #fdfd00;
+}
+
+footer em.child {
+  color: #fdfd00;
+}
+
+footer em.child,
+footer div.child,
+footer .child {
+  color: #fdfd00;
+}
+
+h3 + p {
+  background: black;
+}
+
+h2 + .test {
+  background: black;
+}
+
+h2 ~ p {
+  background: black;
+}
+
+h2 ~ p,
+h2 ~ div > p {
+  background: black;
+}
+
+h2 ~ p,
+h2 ~ * > p {
+  background: black;
+} */
+
+/* =====================================================
+selectors2
+===================================================== */
+
+/* .card-dark {
+  background: #dadad3;
+}
+
+.item {
+  color: green;
+}
+
+.item-first {
+  color: blue;
+}
+
+.item:first-child {
+  color: blue;
+}
+
+.item:last-child {
+  color: red;
+}
+
+.item:only-child {
+  color: hsl(296, 100%, 50%);
+}
+
+.item:first-of-type {
+  color: #ffc400;
+}
+
+.item:last-of-type {
+  color: hsl(180, 100%, 50%);
+}
+
+.item:only-of-type {
+  color: hsl(325, 96%, 44%);
+}
+
+.item:nth-child(5) {
+  color: hsl(343, 96%, 44%);
+}
+
+div:nth-child(10) {
+  color: hsl(276, 96%, 44%);
+}
+
+div:nth-child(even) {
+  color: hwb(244 2% 14%);
+}
+
+div:nth-child(odd) {
+  color: hwb(70 2% 14%);
+}
+
+div:nth-child(3n) {
+  color: hsl(202, 96%, 44%);
+}
+
+div:nth-child(3n + 1) {
+  color: hsl(202, 96%, 44%);
+}
+
+div:nth-child(3n - 2) {
+  color: hsl(202, 96%, 44%);
+}
+
+div:nth-last-child(3n - 2) {
+  color: hsl(202, 96%, 44%);
+}
+
+div:nth-of-type(2n) {
+  color: hsl(76, 90%, 49%);
+}
+
+div:nth-last-of-type(2n) {
+  color: hsl(76, 90%, 49%);
+}
+
+p:not(.item) {
+  color: violet;
+}
+
+.item:not(p) {
+  color: violet;
+}
+
+p:empty {
+  height: 10px;
+  background: red;
+} */
+
+/* =====================================================
+selectors3
+===================================================== */
+
+/* .card-dark {
+  background: rgb(247, 244, 244);
+}
+
+.input-dark {
+  background: rgb(197, 192, 192);
+}
+
+.input-dark[required] {
+  background: rgb(227, 25, 25);
+}
+
+.input-dark-required {
+  background: rgb(227, 25, 25);
+}
+
+.input-dark[type='number'] {
+  background: #19e337;
+}
+
+.small-img[alt~='small'] {
+  height: 500px;
+  width: 600px;
+}
+
+.card[alt~='small'] {
+  height: 500px;
+}
+
+.card[class~='img'] {
+  height: 500px;
+}
+
+.card.img {
+  height: 500px;
+}
+
+.small-img[alt~='small'] {
+  height: 500px;
+}
+
+a[rel~='external'] {
+  color: green;
+}
+
+button[class|='btn'] {
+  background: red;
+}
+
+button[class*='btn'] {
+  background: #8000ff;
+}
+
+button[class$='btn'] {
+  background: #00ff44;
+}
+
+.btn::first-letter {
+  color: #6600ff;
+}
+
+.big-text::first-line {
+  color: rgb(255, 0, 111);
+}
+
+.input-dark::placeholder {
+  color: green;
+  background: blue;
+}
+
+.before-after::before,
+.before-after::after {
+  content: '$$$';
+  color: #00ff44;
+  background: red;
+} */
+
+/* ==========================================
+selectors4
+========================================== */
+
+.card-dark {
+  background: rgb(247, 244, 244);
+}
+
+#test:target {
+  color: red;
+}
+
+.link:link {
+  color: red;
+}
+
+.link:hover {
+  color: green;
+}
+
+.card:hover {
+  background: rgb(245, 237, 5);
+}
+
+.link:active {
+  color: purple;
+}
+
+.card:active {
+  background: purple;
+}
+
+input {
+  background-color: grey;
+}
+
+input:focus {
+  background-color: red;
+}
+
+.card:focus-within {
+  background: red;
+}
+
+.card:lang(fr) {
+  background: rgb(38, 0, 255);
+}
+
+.card:lang(en) {
+  background: rgb(13, 255, 0);
+}
+
+.card:lang(en) > span::after {
+  content: ' (en)';
+}
+
+button {
+  background-color: aquamarine;
+}
+
+button:enabled {
+  background-color: rgb(238, 255, 127);
+}
+
+button:disabled {
+  background-color: rgb(255, 0, 0);
+}
+
+.inp:read-write {
+  background-color: blue;
+}
+
+.inp:read-only {
+  background-color: red;
+}
+
+input[type='checkbox']:checked ~ span {
+  background: red;
+}
+
+.valid:valid {
+  background: yellow;
+}
+
+.valid:invalid {
+  background: #ffa200;
+}
+
+.valid:optional {
+  background: green;
+}
+
+.number:focus {
+  background: grey;
+}
+
+.number:out-of-range {
+  background: red;
+}
+
+.number:in-range {
+  background: green;
+}
+
+.number:invalid {
+  background: yellow;
+}
+
+input:placeholder-shown ~ span {
+  background: pink;
+}
