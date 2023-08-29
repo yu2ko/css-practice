@@ -62,7 +62,7 @@ p:hover {
 }
 
 .card {
-  color: red;
+  color: rgb(72, 0, 255);
 }
 
 #test {
@@ -130,4 +130,26 @@ span {
 
 .test {
   font-weight: lighter;
+  display: none;
+}
+
+/* lesson10 */
+
+.test {
+  font-weight: lighter;
+  /* display: none; */
+}
+
+.block {
+  display: block;
+  background: #32e106;
+  margin: auto;
+  width: 50%;
+  width: fit-content;
+}
+
+.inline-block {
+  display: inline-block;
+  background: grey;
+  margin-left: 50px;
 }
