@@ -1,0 +1,133 @@
+/* Lesson8 */
+
+.card > p {
+  color: #6418e1;
+}
+
+.card > p {
+  color: rgb(255, 242, 0);
+}
+
+.card > p {
+  color: rgba(228, 15, 15, 0.166);
+}
+
+/* p {
+  background: rgb(6, 239, 235);
+} */
+
+/* https://hslpicker.com/ */
+
+.card > p {
+  color: hsla(285, 100%, 50%, 1);
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/WebKit_Extensions */
+
+/* div {
+  background-color: yellow;
+  width: 120px;
+  height: 120px;
+}
+
+.exampleText {
+  writing-mode: vertical-rl;
+  border-inline-start: 5px dashed blue;
+} */
+
+/* https://ru.stackoverflow.com/questions/940770/%D0%9A%D0%B0%D0%BA%D1%83%D1%8E-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8E-%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D1%8F%D0%B5%D1%82-webkit-%D0%B2-css */
+
+/* https://caniuse.com/ */
+
+.card > p {
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
+}
+
+p:focus,
+p:active,
+p:hover {
+  color: green;
+  -webkit-text-fill-color: rgb(255, 251, 0);
+  -webkit-text-stroke: 0.5px blue;
+
+  direction: rtl;
+}
+
+#test {
+  color: initial;
+  -webkit-text-fill-color: initial;
+  -webkit-text-stroke: initial;
+}
+
+.card {
+  color: red;
+}
+
+#test {
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke: inherit;
+}
+
+#test {
+  color: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-text-stroke: unset;
+}
+
+#test {
+  color: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-text-stroke: unset;
+
+  /* writing-mode: vertical-rl; */
+  /* writing-mode: vertical-lr; */
+  /* text-align: right; */
+  text-align: justify;
+  letter-spacing: 0.1em;
+}
+
+span {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline dotted red;
+  text-decoration-color: blue;
+}
+
+span:hover {
+  text-decoration-line: line-through;
+  text-decoration-style: double;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/tab-size */
+
+pre {
+  tab-size: 4;
+}
+
+.span-b {
+  text-decoration-color: blue;
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+}
+
+/* Lesson 9 */
+
+* {
+  font-family: 'Roboto', sans-serif;
+  /* font-family: fantasy; */
+  font-size: 16px;
+  font-weight: 900;
+  font-display: swap;
+}
+
+span {
+  font-size: larger;
+  font-weight: 900;
+}
+
+.test {
+  font-weight: lighter;
+}
