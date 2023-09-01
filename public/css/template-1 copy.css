@@ -1,0 +1,59 @@
+.page {
+  background: #fff;
+}
+
+.page-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 24px;
+}
+
+.header-logo {
+  font-size: 22px;
+  padding-top: 4px;
+}
+
+/* .divider-hr {
+  margin: 0;
+} */
+
+.divider-div {
+  margin: 0;
+  height: 1px;
+  background: #dee2e6;
+}
+
+.nav {
+  display: block;
+}
+
+.nav-link {
+  color: #343a40;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.nav-vertical > .nav-link {
+  display: block;
+}
+
+.nav-inline > .nav-link:not(:last-child) {
+  margin-right: 24px;
+}
+
+.nav-vertical > .nav-link:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.header-nav-right {
+  margin-left: auto;
+  width: fit-content;
+}
