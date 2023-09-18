@@ -1,38 +1,43 @@
-{{!-- <div class='page'> --}}
-  {{!-- <div class='page_content'> --}}
-	{{!-- <header class='page_block'> --}}
-		<header class='header'>
-			{{!-- <div class=''> --}}
-				{{> logo}}
-			{{!-- </div> --}}
-			
-			<nav class='header_nav'>
-				<div class="header_nav_right">
-					{{> nav list=header}}
-				</div>
-			</nav>
-		</header>
-	{{!-- </header> --}}
+	<header class='header'>
+		<a href="#test">
+			{{> logo}}
+		</a>
+		<nav class='header_nav'>
+			<div class="header_nav_right">
+				{{> nav list=header}}
+			</div>
+		</nav>
+	</header>
 	
+	{{!-- <div class="modal">
+			{{hero.text}}
+	</div> --}}
+
 	{{#with hero}}
 		<div class="hero">
 			<div class="hero_content">
 				<h1 class="hero_title">{{title}}</h1>
 				<p class="hero_text">{{text}}</p>
 			</div>
-			<img src="{{photo}}" alt="Hero photo" class="hero_image">
+			<div class="hero_slider">
+				<div class="hero_slider_icon hero_slider_left">{{left}}</div>
+				<img src="{{photo}}" alt="Hero photo" class="hero_image">
+				<div class="hero_slider_icon hero_slider_right">{{right}}</div>
+			</div>
 		</div>
 	{{/with}}
 
+	<input type="text" class="input">
+
+	<div class="modal">
+			{{hero.text}} {{hero.text}}
+			<img src="{{hero.photo}}" alt="Hero photo" class="modal_image">
+			<div class="modal_text">{{hero.text}} {{hero.text}}</div>
+	</div>
+	
 	<main class="blog">
 		{{#each blog}}
-		{{> cardBlog data=this}}
-		{{!-- <div class="card">
-			<div class="card_image" style="background-image: url({{img}})"></div>
-			<h2 class="card_title">{{title}}</h2>
-			<p class="card_text">{{text}}</p>
-			<a href="" class="card_button" href="{{href}}">{{button}}</a>
-		</div> --}}
+			{{> cardBlog data=this}}
 		{{/each}}
 	</main>
 
@@ -48,20 +53,16 @@
 	</div>
 	{{/with}}
 
-	{{!-- <footer class="page_block"> --}}
-		<footer class="footer">
-			<div>
-				{{> logo}}
-				<span class="footer_copyright">Copyright 2023-2024</span>
-			</div>
-			
-			{{#each footer}}
-			<div>
-				<span class="footer_title">{{title}}</span>
-				{{> nav list=links isVertical=true}}
-			</div>
-			{{/each}}
-		</footer>
-	{{!-- </footer> --}}
-  {{!-- </div> --}}
-{{!-- </div> --}}
+	<footer class="footer" id="test">
+		<div>
+			{{> logo}}
+			<span class="footer_copyright">Copyright 2023-2024</span>
+		</div>
+		
+		{{#each footer}}
+		<div>
+			<span class="footer_title">{{title}}</span>
+			{{> nav list=links isVertical=true}}
+		</div>
+		{{/each}}
+	</footer>
