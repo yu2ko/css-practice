@@ -297,15 +297,19 @@
   align-items: center;
 }
 
-.form_checkbox > input {
+/* .form_checkbox > input {
   display: none;
-}
+} */
 
-.form_checkbox > input ~ div {
+/* .form_checkbox > input ~ div {
   border: 1px solid #767676;
   border-radius: 4px;
   height: 13px;
   width: 13px;
+} */
+
+.form_checkbox:hover {
+  text-decoration: underline;
 }
 
 .form_checkbox > input:checked ~ div {
