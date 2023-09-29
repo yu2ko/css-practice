@@ -1,0 +1,48 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-36: 36px;
+
+  --size-12: 12px;
+  --size-14: 14px;
+  --size-16: 16px;
+  --size-18: 18px;
+  --size-20: 20px;
+  --size-24: 24px;
+  --size-32: 32px;
+
+  --color-border: #37445b;
+
+  --color-primary: #885ffb;
+  --color-blue: rgb(0, 0, 255);
+  --color-white: #fff;
+  --color-grey: #9ca3af;
+  --color-yellow: rgb(255, 255, 0);
+
+  --color-bg: #111827;
+
+  --color-title: #212529;
+  --color-text: #343a40;
+
+  --border-radius-4: 4px;
+  --border-radius-10: 10px;
+  --border-radius-12: 12px;
+  --border-radius-24: 24px;
+
+  --weight-title: 600;
+  --weight-text: 400;
+  --weight-big: 700;
+
+  --page-width: 1150px;
+
+  --delay-s: 2s;
+
+  --opacity: 0.7;
+}

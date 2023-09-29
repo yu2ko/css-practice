@@ -1,3 +1,27 @@
+/* lesson24 */
+/* https://webfonts.pro */
+@import '/css/var.css';
+
+@font-face {
+  font-family: Segment;
+  src: url(/public/font/Segment-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Segment;
+  src: url(/public/font/Segment-SemiBold.otf);
+  font-weight: 600;
+}
+
+@layer normalize, main, component, style;
+
+/* @layer style {
+  .card_button {
+    background: red;
+  }
+} */
+
 /* lesson20 */
 @keyframes fly {
   from {
@@ -28,7 +52,7 @@
   }
 }
 
-:root {
+/* :root {
   font-family: 'Roboto', sans-serif;
   --space-m: 12px;
   --space-xm: 16px;
@@ -50,7 +74,7 @@
   --weight-title: 500;
   --weight-text: 400;
   --page-width: 960px;
-}
+} */
 
 /* ================================ */
 .page {
@@ -272,15 +296,23 @@
   transition-duration: 1s;
 }
 
-.card_button {
-  color: var(--color-white);
-  background-color: var(--color-primary);
+@layer main {
+  .card_button {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+  }
+
+  .card_button:hover {
+    opacity: 0.7;
+    background-color: yellow;
+    color: red;
+  }
 }
 
-.card_button:hover {
-  opacity: 0.7;
-  background-color: yellow;
-  color: red;
+@layer component {
+  .card_button {
+    background: red;
+  }
 }
 
 .form {
@@ -443,4 +475,161 @@ body:hover .modal {
 
 :root {
   scroll-behavior: smooth;
+}
+
+/* lesson24 */
+.blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* @media all and (max-width: 800px) {
+  .blog {
+    grid-template-columns: repeat(2, 2fr);
+  }
+} */
+
+@media all and (min-width: 0px) and (max-width: 600px) {
+  .blog {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 601px) and (max-width: 800px) {
+  .blog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* @media not all and (min-width: 601px) and (max-width: 800px) {
+  .blog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+
+@media all and (min-width: 601px) and (max-width: 800px),
+  all and (min-width: 1000px) {
+  .blog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* @media all and (not (min-width: 800px)) {
+  .page_content {
+    background: red;
+  }
+} */
+
+/* @media all and (max-width: 800px) {
+  .page_content {
+    background: red;
+  }
+} */
+
+/* @media all and (min-height: 600px) {
+  .page_content {
+    background: blue;
+  }
+} */
+
+@media all and (width <= 600px) {
+  .blog {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (600px < width <= 800px) {
+  .blog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form {
+  gap: var(--space-l);
+}
+
+@media all and (width <= 560px) {
+  .form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.form_info {
+  max-width: 300px;
+  width: 100%;
+  line-height: 150%;
+}
+
+.form_content {
+  align-items: center;
+  text-align: center;
+}
+
+.hero_container {
+  /* container-type: inline-size; */
+  container-type: size;
+  /* min-height: max-content; */
+  container-name: hero;
+
+  height: 500px;
+}
+
+@container hero (width < 960px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+
+/* .card_button {
+  background: red;
+} */
+
+@layer style {
+  .card_button {
+    background: red;
+  }
+}
+
+@layer main {
+  .card_button {
+    background: yellow;
+  }
+}
+
+.ex {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 1ex;
+}
+
+.ex {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-left: 1ex;
+  line-height: 1.5em;
+}
+
+/* .test {
+  position: absolute;
+  background: red;
+  top: 0;
+  left: 0;
+
+  height: 100vh;
+  width: 100vw;
+
+  height: 100vmin;
+  width: 100vmin;
+  z-index: 9999;
+} */
+
+.hero_title {
+  /* font-size: 5cqw; */
+  /* font-size: 5%; */
+  /* font-size: 10cqh; */
+
+  /* Предпочтительно, по ширине: */
+  font-size: 5cqw;
 }
