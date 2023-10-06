@@ -301,7 +301,6 @@ body {
 
   .cust_img {
     width: 100%;
-    /* max-width: 556px; */
   }
 
   .cust_quote {
@@ -310,10 +309,6 @@ body {
     font-weight: 700;
     line-height: 150%;
     letter-spacing: -0.3px;
-  }
-  .cust_logo_img {
-    /* width: 148px; */
-    /* height: 40px; */
   }
 
   .cust_cio {
@@ -473,10 +468,6 @@ body {
   }
 
   @media all and (width < 600px) {
-    .page_content {
-      max-width: 600px;
-    }
-
     .features_grid_4 {
       grid-template-columns: 2fr 2fr;
     }
@@ -491,10 +482,6 @@ body {
   }
 
   @media all and (width < 400px) {
-    .page_content {
-      max-width: 400px;
-    }
-
     .features_grid_4 {
       grid-template-columns: 1fr;
     }
@@ -506,6 +493,10 @@ body {
 
     .features_grid_3 > .feat_card:first-of-type {
       grid-row: unset;
+    }
+
+    .hero_title {
+      font-size: var(--size-4);
     }
 
     .cust_quote {
