@@ -170,8 +170,8 @@
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: var(--space-l);
+  width: 100%;
 }
 
 .card_image {

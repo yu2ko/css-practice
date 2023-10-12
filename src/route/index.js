@@ -169,12 +169,12 @@ router.get('/template-1', function (req, res) {
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/template-1_practice1', function (req, res) {
+router.get('/template-1_practice', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('template-1_practice1', {
-    layout: 'template-1_practice1',
+  res.render('template-1_practice', {
+    layout: 'template-1_practice',
 
     page: {
       title: 'Template-1 Page',
@@ -547,12 +547,12 @@ router.get('/template-2', function (req, res) {
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/template-2_practice2', function (req, res) {
+router.get('/template-2_practice', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('template-2_practice2', {
-    layout: 'template-2_practice2',
+  res.render('template-2_practice', {
+    layout: 'template-2_practice',
 
     page: {
       title: 'Example Page',
@@ -1073,12 +1073,12 @@ router.get('/template-4', function (req, res) {
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/template-3_practice3', function (req, res) {
+router.get('/template-3_practice', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('template-3_practice3', {
-    layout: 'template-3_practice3',
+  res.render('template-3_practice', {
+    layout: 'template-3_practice',
 
     page: {
       title: 'Example Page',
@@ -1539,12 +1539,12 @@ router.get('/template-6', function (req, res) {
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/template-5_practice5', function (req, res) {
+router.get('/template-5_practice', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('template-5_practice5', {
-    layout: 'template-5_practice5',
+  res.render('template-5_practice', {
+    layout: 'template-5_practice',
 
     page: {
       title: 'Example Page',
@@ -1820,12 +1820,12 @@ router.get('/template-7', function (req, res) {
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/template-4_practice4', function (req, res) {
+router.get('/template-4_practice', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('template-4_practice4', {
-    layout: 'template-4_practice4',
+  res.render('template-4_practice', {
+    layout: 'template-4_practice',
 
     page: {
       title: 'Example Page',
@@ -1966,12 +1966,12 @@ router.get('/template-4_practice4', function (req, res) {
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/template-6_practice6', function (req, res) {
+router.get('/template-6_practice', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('template-6_practice6', {
-    layout: 'template-6_practice6',
+  res.render('template-6_practice', {
+    layout: 'template-6_practice',
 
     page: {
       title: 'Example Page',
@@ -2131,12 +2131,12 @@ router.get('/template-6_practice6', function (req, res) {
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/template-7_practice7', function (req, res) {
+router.get('/template-7_practice', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('template-7_practice7', {
-    layout: 'template-7_practice7',
+  res.render('template-7_practice', {
+    layout: 'template-7_practice',
 
     page: {
       title: 'Example Page',
@@ -2246,6 +2246,20 @@ router.get('/slack', function (req, res) {
 
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('slack', {
+    layout: null,
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
+
+// ================================================================
+// router.get Створює нам один ентпоїнт
+
+//           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/dashboard', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('dashboard', {
     layout: null,
   })
   //                  ↑↑ сюди вводимо JSON дані

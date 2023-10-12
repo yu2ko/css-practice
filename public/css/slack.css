@@ -321,7 +321,7 @@ body {
     padding: 107px 0 80px 0;
   }
 
-  .about_content {
+  .about_card_list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 75px;
@@ -404,7 +404,7 @@ body {
       height: 300px;
     }
 
-    .about_content {
+    .about_card_list {
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -462,7 +462,7 @@ body {
       flex-direction: column;
     }
 
-    .about_content {
+    .about_card_list {
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -476,7 +476,7 @@ body {
       margin-left: 0;
     }
 
-    .about_content {
+    .about_card_list {
       grid-template-columns: 1fr;
     }
   }
@@ -503,7 +503,7 @@ body {
       font-size: var(--size-3);
     }
 
-    .about_content {
+    .about_card_list {
       grid-template-columns: 1fr;
     }
 
